@@ -1,87 +1,147 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Michael Palmer's Portfolio of Work -- this is a class sample site">
+    <meta name="author" content="Michael Palmer's">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <title>Michael's Portfolio</title>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Portfolio by Mikrpalmer</title>
-  </head>
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/Mikrpalmer/portfolio">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Portfolio</h1>
-            <h2>Michael Ryan Palmer</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/Mikrpalmer/portfolio/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Mikrpalmer/portfolio/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h1>
-<a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Me</h1>
-
-<p>I am in my second year of college as well as working two full time jobs. I am a very meticulous, driven person, with a lot of leading/managing experience. I look forward to the new experiences i am able to experience.</p>
-
-<h1>
-<a id="information" class="anchor" href="#information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Information</h1>
-
-<p>My Resume Download-<a href="https://github.com/Mikrpalmer/portfolio/blob/master/MikesResume.docx">Resume</a></p>
-
-<p>Email- <a href="mailto:Palmermr20@mounties.mansfield.edu">Palmermr20@mounties.mansfield.edu</a></p>
-
-<h1>
-<a id="projects" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h1>
-
-<p><a href="https://github.com/Mikrpalmer">Github Repository</a></p>
-
-<p><a href="https://github.com/MansfieldTeam2">Mansfield team 2</a></p>
-
-<p>I've worked on the bulletin board outside of 207 as well as creating a computer database. I am currently making a few new servers in AWS.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/Mikrpalmer">Mikrpalmer</a> can be found on <a href="https://github.com/Mikrpalmer/portfolio">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
+    <style>
+        h2 {
+            color: rgba(120, 59, 191, 0.99);
+        }        
+        .top-buffer { 
+            margin-top: 30px; 
+        }   
+        .jumbotron h1 {
+            color: rgba(120, 59, 191, 0.99);
+        }
+        .jumbotron {
+            position: relative;
+            background: rgba(50, 50, 155, 0.1); 
+/*          background: rgba(36, 31, 155, 0.28) url("resources/ph600.png") center center;*/
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+    <div class="container">
+    <h1>Michael Palmer's Portfolio</h1>
+    <p>Welcome to my portfolio. I am currently a CIS major at Mansfield University of Pennsylania. I like to develop software and have set up this site to keep track of my projects.</p>
+    </div>
     </div>
 
-    
+    <!-- This container holds the rest of the content -->
+    <div class="container">
+        
+    <!-- First row of content -->
+    <div class="row">
+        
+    <div class="col-md-6">
+    <h2>Resume</h2>
+    <p>Please check out my resume for more information on my skill set. I am currently looking for internship opportunities.</p>
+    <p><a class="btn btn-default" href="resources/MikesResume.pdf" role="button">View Resume (pdf) &raquo;</a></p>
+    <p><a class="btn btn-default" href="resources/MikesResume.pdf" role="button">Download Resume (docx) &raquo;</a></p>
+    <p><a class="btn btn-default" href="https://github.com/Mikrpalmer/portfolio" role="button">Visit Portfolio Repository (GitHub) &raquo;</a>
+    </p>
+    </div>
+        
+    <div class="col-md-6">
+    <img class="img-responsive img-rounded" src="resources/resumejdoe600.png">
+    </div>  
+        
+    </div> 
+    <!-- End of row 1 -->
+      
+    <!-- Second row of content -->
+    <div class="row top-buffer">
+        
+    <div class="col-md-6">
+    <h2>AWS DevOps</h2>
+    <p>In this project I created a shell script that automatically provisons an AWS EC2 Ubuntu instance as a LAMP server with various programming languages and tools. In addition, there is a second script that adds on support for a Remote Desktop accessible GUI server. This is what I often use for software development as it can be accessed anywhere from any computer.</p>
+    <p><a class="btn btn-default" href="https://github.com/Mikrpalmer/AwsShellScripts2" role="button">View details &raquo;</a></p>
+    </div>
+        
+    <div class="col-md-6">
+    <img class="img-responsive img-rounded" src="resources/awscontrols600.jpg">
+    </div>
+    </div>
+    <!-- End of row 2 -->
+        
+    <!-- Third row of content -->
+    <div class="row top-buffer">            
+    <div class="col-md-6">
+    <h2>Team Project Application</h2>
+    <p>This project consists of a console-based menu-driven application to keep track of computers. The software is written in Java and the data is stored in a MySQL database table.</p>
+    <p><a class="btn btn-default" href="https://github.com/MansfieldTeam2/ComputerDB" role="button">View details &raquo;</a></p>
+    </div>
+  
+    <div class="col-md-6">
+    <img class="img-responsive img-rounded" src="resources/2.png">
+    </div>
+    </div>
+    <!-- End of row 3 -->
+                
+    <!-- Fourth row of content -->
+    <div class="row top-buffer">
+    <div class="col-md-6">
+    <h2>Computer Manager Application</h2>
+    <p>This project consists of a console-based menu-driven application to keep track of Computers. The software is written in Java and the data is stored in a MySQL database table.</p>
+    <p><a class="btn btn-default" href="https://github.com/MansfieldTeam2/ComputerDB" role="button">View details &raquo;</a></p>
+    </div>
+        
+    <div class="col-md-6">
+    <img class="img-responsive img-rounded" src="resources/project.jpg">
+    </div>
+    </div>
+    <!-- End of row 4 -->
+ 
+    <!-- Fifth row of content - this time in 3 columns without screenshots -->
+    <div class="row top-buffer">
+    <div class="col-md-4">
+    <h2>Other Application</h2>
+    <p>Under development...</p>
+    <p><a class="btn btn-default" href="https://github.com/MansfieldTeam2/" 
+          role="button">View details &raquo;</a></p>
+    </div>
+        
+    <div class="col-md-4">
+    <h2>Our Wiki's</h2>
+    <p>Under development...</p>
+    <p><a class="btn btn-default" href="https://github.com/MansfieldTeam2/User-Guides/wiki" role="button">View details &raquo;</a></p>
+    </div>
+        
+    <div class="col-md-4">
+    <h2>Future Project</h2>
+    <p>Under development...</p>
+    <p><a class="btn btn-default" href="https://github.com/MansfieldTeam2" role="button">View details &raquo;</a></p>
+    </div>
+        
+    </div>
+    <!-- End of row 5 -->
+                
+    <hr>
+        
+    <footer>
+    <p>This web page design is released to the public domain by John Phillips and you are free to use it as your own. It is built using the Bootstrap framework which has an MIT open source license. You may want to copyright your own variations to this web page by removing this message and adding your name to the following: &copy; 2016 Your Name Here</p>
+    </footer>
+        
+    </div>
+    <!-- End of main content container -->
+      
+    <!-- Put the Javascript at the bottom -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
